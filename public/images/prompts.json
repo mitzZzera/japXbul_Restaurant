@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "interior",
+    "prompt": "Use case: photorealistic-natural\nAsset type: restaurant website hero photograph, wide landscape 1536x1024\nPrimary request: A cinematic interior photograph of the fictional Sora & Sol Japanese-Bulgarian fusion restaurant in Bansko, Bulgaria.\nScene/backdrop: Warm walnut Japanese wood joinery, shoji screens and oversized paper lanterns, Bulgarian red-and-black woven kilim cushions and table runners, traditional stone mountain-house walls, elegant dining tables. A panoramic window overlooks the Pirin mountains at dusk.\nStyle/medium: Luxurious yet cozy editorial architecture photography, realistic rich material textures, restrained sophisticated styling.\nComposition/framing: Wide interior view suitable for a cinematic landscape hero crop, natural perspective.\nLighting/mood: Warm lantern glow inside balanced with cool mountain dusk beyond the windows.\nConstraints: No text, no logos, no watermark, no people.",
+    "path": "public/images/restaurant-hero.png",
+    "mode": "built-in image_gen"
+  },
+  {
+    "asset": "gyoza",
+    "prompt": "Use case: photorealistic-natural\nAsset type: restaurant website food photograph, landscape 1536x1024\nPrimary request: A close-up photograph of beautifully browned pork-and-leek gyoza inspired by Bulgarian kavarma, served on a charcoal ceramic plate.\nScene/backdrop: Warm wood restaurant table with a subtle red Bulgarian woven textile.\nSubject: Carefully plated golden-brown gyoza with herb oil, red pepper sauce and fresh dill; appetizing, handmade food with realistic textures.\nStyle/medium: Sophisticated natural food photography with shallow depth of field.\nComposition/framing: Close-up landscape composition focusing on the plate and dumplings.\nLighting/mood: Warm, moody natural light, consistent with an intimate Japanese-Bulgarian mountain restaurant.\nConstraints: No text, no logos, no watermark, no people.",
+    "path": "public/images/kavarma-gyoza.png",
+    "mode": "built-in image_gen"
+  },
+  {
+    "asset": "vignette",
+    "prompt": "Use case: photorealistic-natural\nAsset type: restaurant website dining vignette photograph, square 1024x1024\nPrimary request: An intimate two-seat window table in the fictional Sora & Sol Japanese-Bulgarian fusion restaurant in Bansko, Bulgaria.\nScene/backdrop: Snowy Pirin mountains visible through the window, warm Japanese lantern glow, wood and stone mountain-restaurant materials.\nSubject: Elegantly set table for two with handmade ceramics, chopsticks, linen and a Bulgarian woven table runner.\nStyle/medium: Realistic, warm editorial restaurant photography with tactile natural materials.\nComposition/framing: Square composition showing the intimate table setting and the mountain view through the window.\nLighting/mood: Cozy warm interior light balanced with cool snowy mountains outside, quietly romantic atmosphere.\nConstraints: No text, no logos, no watermark, no people.",
+    "path": "public/images/window-table.png",
+    "mode": "built-in image_gen"
+  }
+]
