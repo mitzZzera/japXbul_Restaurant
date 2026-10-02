@@ -394,7 +394,9 @@ export default function Reservations() {
             <label className="date-control">
               <CalendarDays size={19} />
               <span>
-                <small>WHEN WOULD YOU LIKE TO JOIN US?</small>
+                {role === "customer" && (
+                  <small>WHEN WOULD YOU LIKE TO JOIN US?</small>
+                )}
                 <input
                   type="date"
                   aria-label="Reservation date"
@@ -408,39 +410,43 @@ export default function Reservations() {
                 />
               </span>
             </label>
-            <div className="control-divider" />
-            <div className="guests-control">
-              <Users size={19} />
-              <div>
-                <label id="guests-label">YOUR PARTY</label>
-                <Select
-                  value={guests}
-                  onValueChange={(v) => {
-                    setGuests(v);
-                    setHour(null);
-                  }}
-                >
-                  <SelectTrigger aria-labelledby="guests-label">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {[1, 2, 3, 4, 5, 6].map((n) => (
-                      <SelectItem key={n} value={String(n)}>
-                        {n} {n === 1 ? "guest" : "guests"}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-            <div className="service-hours">
-              <Clock3 size={17} />
-              <span>
-                12:00–23:00 · 2-hour tables
-                <br />
-                <small>All times are local to Bansko</small>
-              </span>
-            </div>
+            {role === "customer" && (
+              <>
+                <div className="control-divider" />
+                <div className="guests-control">
+                  <Users size={19} />
+                  <div>
+                    <label id="guests-label">YOUR PARTY</label>
+                    <Select
+                      value={guests}
+                      onValueChange={(v) => {
+                        setGuests(v);
+                        setHour(null);
+                      }}
+                    >
+                      <SelectTrigger aria-labelledby="guests-label">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {[1, 2, 3, 4, 5, 6].map((n) => (
+                          <SelectItem key={n} value={String(n)}>
+                            {n} {n === 1 ? "guest" : "guests"}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+                <div className="service-hours">
+                  <Clock3 size={17} />
+                  <span>
+                    12:00–23:00 · 2-hour tables
+                    <br />
+                    <small>All times are local to Bansko</small>
+                  </span>
+                </div>
+              </>
+            )}
           </div>
         )}
         <TabsContent value="customer">
