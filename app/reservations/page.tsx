@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import Link from "next/link";
+
 import {
   CalendarDays,
   Users,
@@ -303,15 +303,15 @@ export default function Reservations() {
       className="reservation-app"
     >
       <header className="site-header reservation-header">
-        <Link className="wordmark" href="/">
+        <a className="wordmark" href="/">
           <span className="brand-symbol">空</span>
           <span>
             SORA <i>&</i> SOL<small>JAPANESE SOUL · BULGARIAN HEART</small>
           </span>
-        </Link>
-        <Link className="back-link" href="/">
+        </a>
+        <a className="back-link" href="/">
           Back to the restaurant
-        </Link>
+        </a>
       </header>
       <div className="view-bar">
         <span>
@@ -721,7 +721,7 @@ export default function Reservations() {
               <br />
               <strong>The rest is on us.</strong>
             </p>
-            <Link href="/#menu">Explore what’s cooking</Link>
+            <a href="/#menu">Explore what’s cooking</a>
           </div>
         </TabsContent>
         <TabsContent value="staff">
@@ -1064,9 +1064,9 @@ export default function Reservations() {
         </TabsContent>
       </main>
       <footer className="reservation-footer">
-        <Link className="footer-brand" href="/">
+        <a className="footer-brand" href="/">
           SORA & SOL
-        </Link>
+        </a>
         <p>A little Kyoto. A little Pirin.</p>
         <span>Made for slow evenings.</span>
       </footer>

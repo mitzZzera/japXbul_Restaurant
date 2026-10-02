@@ -1,22 +1,21 @@
-import Link from "next/link";
 import { MapPin, Clock3, Mountain, Flame, Flower2 } from "lucide-react";
 export default function Home() {
   return (
     <>
       <header className="site-header">
-        <Link className="wordmark" href="/">
+        <a className="wordmark" href="/">
           <span className="brand-symbol">空</span>
           <span>
             SORA <i>&</i> SOL<small>JAPANESE SOUL · BULGARIAN HEART</small>
           </span>
-        </Link>
+        </a>
         <nav>
           <a href="#story">Our story</a>
           <a href="#menu">The menu</a>
           <a href="#space">The space</a>
-          <Link className="button" href="/reservations">
+          <a className="button" href="/reservations">
             Find your table
-          </Link>
+          </a>
         </nav>
       </header>
       <main>
@@ -34,9 +33,9 @@ export default function Home() {
               <br />
               An unexpected place to feel at home.
             </p>
-            <Link className="button cream-button" href="/reservations">
+            <a className="button cream-button" href="/reservations">
               Come share our table
-            </Link>
+            </a>
           </div>
           <div className="hero-bottom">
             <span>
@@ -163,9 +162,9 @@ export default function Home() {
               A spot close to the open kitchen. Choose the table that feels like
               you.
             </p>
-            <Link className="button cream-button" href="/reservations">
+            <a className="button cream-button" href="/reservations">
               Explore the tables
-            </Link>
+            </a>
           </div>
           <div
             className="window-image"
@@ -194,16 +193,16 @@ export default function Home() {
               <br />
               <strong>12:00 – 23:00</strong>
             </p>
-            <Link className="button" href="/reservations">
+            <a className="button" href="/reservations">
               Make a reservation
-            </Link>
+            </a>
           </div>
         </section>
       </main>
       <footer>
-        <Link className="footer-brand" href="/">
+        <a className="footer-brand" href="/">
           SORA & SOL
-        </Link>
+        </a>
         <p>Japanese soul. Bulgarian heart. Bansko.</p>
         <span>© {new Date().getFullYear()} Sora & Sol</span>
       </footer>
